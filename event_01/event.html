@@ -33,17 +33,25 @@
 								<td>
 									<ul class="inline_linked_list">
 										<li>
-											<div class="combo_box">
+											<div class="combo_box" id="cellphone_select">
 												<a href="#" class="combo_target">선택</a>
 												<div class="combo_option_wrap">
 													<ul class="combo_option_list">
-														<li><a href="#" class="combo_option">010</a></li>
-														<li><a href="#" class="combo_option">017</a></li>
-														<li><a href="#" class="combo_option">018</a></li>
-														<li><a href="#" class="combo_option">019</a></li>
+														<li><a href="#" data-value="0" class="combo_option">010</a></li>
+														<li><a href="#" data-value="1" class="combo_option">017</a></li>
+														<li><a href="#" data-value="2" class="combo_option">018</a></li>
+														<li><a href="#" data-value="3" class="combo_option">019</a></li>
 													</ul>
 												</div>
 											</div>
+											<script>
+												$(function(){
+													// customChange 이벤트 핸들러
+													$("#cellphone_select").on("customChange", function(e, value){
+														console.log("선택된 value:", value);
+													});
+												})
+											</script>
 										</li>
 										<li><input type="text" class="event_input" /></li>
 										<li><input type="text" class="event_input" /></li>
@@ -149,6 +157,29 @@
                 });
 			}
         });
+
+		$(function(){
+			$(".ec_tbar").on("click",function(e){
+				e.preventDefault();
+				$(this).closest("li").toggleClass("active");
+			});
+			$(".combo_target").on("click",function(e){
+				e.preventDefault();
+				$(this).closest(".combo_box").toggleClass("active");
+			});
+			$(".combo_option").on("click", function(e){
+				e.preventDefault();
+				const $combo = $(this).closest(".combo_box");
+				const text = $(this).text();
+				const value = $(this).data("value"); // data-value 가져오기
+
+				$combo.find(".combo_target").text(text);
+				$combo.removeClass("active");
+
+				// customChange 이벤트 발생시키면서 value 전달
+				$combo.trigger("customChange", [value]);
+			});
+		})
 	</script>
 </body>
 </html>
