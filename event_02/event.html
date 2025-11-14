@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
@@ -16,52 +13,200 @@
   </head>
   <body class="page_body">
     <div class="page_wrap">
-      <div class="event_contents_wrap"></div>
+      <div class="event_contents_wrap">
+        <div class="event_visual"><img src="./assets/images/main.gif" alt="" /></div>
+        <div class="event_contents">
+          <div class="ec_slice_wrap">
+            <div class="ec_slice">
+              <img src="./assets/images/event_info_01.jpg" alt="" />
+              <div class="btn_ec_submit_container">
+                <img src="./assets/images/btn_take_santa.png" class="btn_ec_submit_img" alt="" />
+                <!-- 버튼 그림자때문에 히트영역 문제로 따로감 -->
+                <a href="#" class="btn_ec_submit"></a>
+              </div>
+            </div>
+            <div class="ec_slice"><img src="./assets/images/event_info_02.jpg" alt="" /></div>
+            <div class="ec_slice"><img src="./assets/images/event_info_03.jpg" alt="" /></div>
+          </div>
+          <div class="ec_note_container">
+            <div class="ec_note_title_row">
+              <h3 class="ec_note_title">유의사항</h3>
+            </div>
+            <div class="ec_note_contents">
+              <ul class="ec_note_list">
+                <li>이벤트는 중복참여가 불가합니다.</li>
+                <li>비정상 경로로 이벤트 참여 시, 당첨에서 제외됩니다.</li>
+                <li>선착순 이벤트의 경우, 참여고객 1인당 1경품 당첨만 가능하며 재참여 및 경품 교환등은 불가합니다. (1개 휴대폰 번호 기준으로 1개 경품 당첨 / 중복 당첨 불가)</li>
+                <li>보너스 이벤트의 경우, 선착순 이벤트 당첨 여부와 관계없이 참여 가능하며, 신한 SOL라이프앱 이벤트 상세페이지 상단의 공유버튼을 통해 공유한 경우에 한해 유효하며, 공유를 통해 전달된 링크로 이벤트에 참여한 인원이 가장 많은 공유자 1명에게 보너스 이벤트 당첨 혜택이 제공됩니다.</li>
+                <li>본 이벤트는 신한라이프 사정에 따라 일정이 변경되거나 중단될 수 있습니다. 경품 이미지는 실제와 다를 수 있습니다.</li>
+                <li>이벤트 참여 및 경품 지급은 경품 제공 동의 (이름, 휴대폰번호) 하신 분에 한해 진행 됩니다.</li>
+                <li>스타벅스, CU 모바일 상품권, 네이버페이 모바일 상품권의 경우 당첨 후 즉시 발송되며, 그 외 경품은 개별 연락 이후 제공 됩니다.</li>
+                <li>모바일 경품은 경품 당첨 시 등록하신 휴대폰번호로 발송 지급되며, 휴대폰번호 등록 오류에 의한 오배송은 책임지지 않습니다.</li>
+                <li>경품 당첨 시 제세공과금은 신한라이프에서 모두 부담합니다.</li>
+                <li>5만원 이상의 경품 당첨 시 발송주소 확인 및 기타 안내를 위해 별도 연락 드리며, 본인확인 및 경품 당첨 안내, 경품 배송 및 제세공과금 처리가 불가한 경우 당첨이 취소 될 수 있습니다.</li>
+                <li>
+                  당첨자 연락처는 경품 발송을 위해 위탁업체 ㈜어질리티코리아에 제공되며, 경품 발송 이후 제공일로부터 3개월 뒤 폐기 됩니다.
+                  <ul class="indent_bullet_list">
+                    <li>
+                      <span class="indent_bullet">-</span>
+                      <p class="indent_para">제공항목 : 이름, 휴대폰 번호</p>
+                    </li>
+                    <li>
+                      <span class="indent_bullet">-</span>
+                      <p class="indent_para">이용목적 : 이벤트 경품 발송</p>
+                    </li>
+                    <li>
+                      <span class="indent_bullet">-</span>
+                      <p class="indent_para">위탁받는 자의 개인정보 보유 이용기간 : 위탁월 기준 3개월</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>본 이벤트 수령 금액을 포함한 기타소득금액이 300만원을 초과할 경우 종합소득신고대상에 해당합니다.</li>
+                <li>기타 이벤트 관련 문의는 고객센터 1644-9376 으로 부탁드립니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- 경품 혜택 팝업 -->
+    <div class="popup_wrap" id="popup_prize">
+      <div class="popup_full_contents">
+        <div class="animation_img_container">
+          <img src="./assets/images/ready_img.png" id="prize_img" alt="" />
+        </div>
+        <div class="btn_ani_bottom_wrap">
+          <img src="./assets/images/btn_take_go.png" class="btn_ani_submit_img" alt="" />
+          <!-- 버튼 그림자때문에 히트영역 문제로 따로감 -->
+          <a href="#" class="btn_ani_submit"></a>
+        </div>
+      </div>
+      <a href="#" class="btn_popup_close"></a>
+    </div>
+    <!-- // 경품 혜택 팝업 -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // 퍼블확인용
-        let url = window.location.href.split("?")[1];
-        let url_2 = url !== undefined ? url.split("#")[0] : null;
+      document.addEventListener('DOMContentLoaded', function () {
+        // 상품 팝업 인스턴스 선언
+        let popup_prize = new DesignPopup({
+          selector: '#popup_prize',
+          closeCallback() {
+            console.log('close common callback');
+            prizeImageReset();
+          },
+        });
 
         // 퍼블확인용
-        if (url_2 === "message_01") {
-          designModal({
-            message:
-              "잘못된 참여 경로입니다.<br /><strong>신한 SOL라이프</strong> 앱에<br />로그인 후 참여해 주세요",
-            okcallback() {
-              console.log("okcallback");
+        let url = window.location.href.split('?')[1];
+        let url_2 = url !== undefined ? url.split('#')[0] : null;
+
+        // 퍼블확인용
+        if (url_2 === 'prize01') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize01.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
             },
           });
         }
-        if (url_2 === "message_02") {
-          designModal({
-            message:
-              "<strong>이미 경품 수령이 완료된<br />휴대폰번호 입니다.</strong><br /><span class='modal_sub_message'>1인 1회 당첨이 가능합니다.</span>",
-            okcallback() {
-              console.log("okcallback");
+        if (url_2 === 'prize02') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize02.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
             },
           });
         }
-        if (url_2 === "message_03") {
-          designModal({
-            message:
-              "<strong>SOL나라 산타가 준비한<br />선착순 선물이 모두 소진되었어요.</strong><br /><span class='modal_sub_message'><strong>보너스 경품 혜택</strong>을<br />기대해 주세요</span>",
-            okcallback() {
-              console.log("okcallback");
+        if (url_2 === 'prize03') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize03.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
             },
           });
         }
-        if (url_2 === "message_04") {
+        if (url_2 === 'prize04') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize04.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
+            },
+          });
+        }
+        if (url_2 === 'prize05') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize05.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
+            },
+          });
+        }
+        if (url_2 === 'prize06') {
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize06.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
+            },
+          });
+        }
+        if (url_2 === 'message_01') {
           designModal({
-            message:
-              "<strong>당첨된 경품을 받으실 전화번호를<br />아직 입력하지 않으셨네요.</strong><br /><span class='modal_sub_message'>지금 바로 입력해주세요!</span>",
+            message: '잘못된 참여 경로입니다.<br /><strong>신한 SOL라이프</strong> 앱에<br />로그인 후 참여해 주세요',
             okcallback() {
-              console.log("okcallback");
+              console.log('okcallback');
+            },
+          });
+        }
+        if (url_2 === 'message_02') {
+          designModal({
+            message: "<strong>이미 경품 수령이 완료된<br />휴대폰번호 입니다.</strong><br /><span class='modal_sub_message'>1인 1회 당첨이 가능합니다.</span>",
+            okcallback() {
+              console.log('okcallback');
+            },
+          });
+        }
+        if (url_2 === 'message_03') {
+          designModal({
+            message: "<strong>SOL나라 산타가 준비한<br />선착순 선물이 모두 소진되었어요.</strong><br /><span class='modal_sub_message'><strong>보너스 경품 혜택</strong>을<br />기대해 주세요</span>",
+            okcallback() {
+              console.log('okcallback');
+            },
+          });
+        }
+        if (url_2 === 'message_04') {
+          designModal({
+            message: "<strong>당첨된 경품을 받으실 전화번호를<br />아직 입력하지 않으셨네요.</strong><br /><span class='modal_sub_message'>지금 바로 입력해주세요!</span>",
+            okcallback() {
+              console.log('okcallback');
             },
           });
         }
       });
+
+      function prizeImageLoad(filename) {
+        document.querySelector('#prize_img').setAttribute('src', filename);
+      }
+
+      function prizeImageReset() {
+        document.querySelector('#prize_img').setAttribute('src', './assets/images/ready_img.png');
+      }
 
       $(function () {});
     </script>
