@@ -208,3 +208,82 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .btn_modal_close:after{transform: rotate(-45deg);}
     */
 }
+
+
+
+/* form */
+.form_page_wrap{max-width:750px;margin:0 auto;background:#b4010d; padding:32px 24px;}
+.form_page_inner{background:#fff; border-radius: 30px;}
+
+.ec_main_wrap{}
+.ec_main_para{}
+.ec_prize_node{}
+.ec_sub_row{}
+.ec_sub_para{}
+.ec_sub_para br{}
+
+.ec_copy_wrap{ text-align:center;white-space:nowrap;}
+.ec_copy_main{font-size:48px; letter-spacing: -1px; font-weight:700; color:#002472;}
+.ec_copy_sub{margin-top:55px; line-height:1.2; font-size:42px; letter-spacing: -1px; font-weight: 500; color:#2348aa;}
+.ec_copy_else{margin-top:15px; line-height:1.2; font-size:32px; letter-spacing: -1px; font-weight: 400; color:#7b7b7b;}
+
+
+.ec_form_tb_wrap{margin-top:55px; position:relative; z-index:5;}
+.ec_form_tb{width:100%;table-layout: auto;}
+.ec_form_tb th,
+.ec_form_tb td{padding-bottom:30px; text-align:center;}
+.ec_form_tb th{width:1px;padding-right:25px;}
+.ec_form_tb tr:last-of-type th,
+.ec_form_tb tr:last-of-type td{padding-bottom:0;}
+.ec_form_key{font-size:35px; color:#393939;  letter-spacing: -1px; font-weight:500; white-space:nowrap; position:relative; top:2px; display:inline-block;}
+input.event_input{height:50px;box-sizing:border-box;width:100%;padding:0 20px 0;font-size:35px; color:#000; appearance: none; border:0; border-bottom:1px solid #d0d0d0;}
+.inline_linked_list{display:flex;border-bottom:1px solid #d0d0d0; align-items:center;}
+.inline_linked_list input.event_input{border:0;}
+.inline_linked_list .combo_box{}
+.inline_linked_list > li{flex:1;}
+.inline_linked_list > li.has_unit{flex:0; white-space:nowrap;}
+.linked_unit{font-size:35px; color:#d0d0d0; display:inline-block; white-space:nowrap; font-weight:300;}
+
+
+.ec_terms_wrap{margin-top:80px;}
+.ec_terms_block{margin-bottom:60px;}
+.ec_terms_block:last-of-type{margin-bottom:0;}
+.ec_terms_copy{margin:15px 0 0 5px; font-size:30px; color:#a0a0a0; letter-spacing:-2px;}
+.ec_terms_title{font-size:30px; text-align:center; color:#565656; font-weight:500; letter-spacing:-2px; margin-bottom:15px;}
+.ec_terms_contents{}
+.ec_toggle_wrap{}
+.ec_toggle_list{}
+.ec_toggle_list > li{}
+.ec_toggle_list > li:last-of-type{}
+.ec_toggle_list > li.active{}
+.ec_toggle_list > li.active .ec_tcont{display:block;}
+.ec_toggle_list > li.active .ec_tbar .ico{transform:rotate(225deg); top:8px;}
+.ec_tbar{box-sizing:border-box; position:relative;  padding:0 60px 13px 5px; border-bottom:2px solid #2348aa; box-sizing:border-box; display:block;}
+.ec_tbar .text_node{font-size:27px; color:#2348aa; line-height:1; font-weight:500; letter-spacing:-0.5px;}
+.ec_tbar .ico{width:18px; height:18px; border-right:2px solid #2348aa; border-bottom:2px solid #2348aa; position:absolute;top:-5px;right:19px; transform:rotate(45deg)}
+.ec_tbar.active .ico{transform:rotate(225deg); top:20px;}
+.ec_tcont{display:none; position:relative;overflow:hidden;overflow-y:auto; border:1px solid #2348aa; height:150px; border-top:0;}
+.ec_tcont_inner{padding:23px;}
+.indent_bullet_list{}
+.indent_bullet_list > li{display:flex;gap:10px;font-size:25px; font-weight:400; line-height:1.4; letter-spacing:-0.5px; margin-bottom:10px;}
+.indent_bullet_list > li:last-of-type{margin-bottom:0;}
+.indent_bullet{display:inline-block; white-space:nowrap;}
+.indent_liquid{flex:1;}
+
+.ec_props_list{display:flex; justify-content: center; align-items:center; gap:10px 35px;}
+.ec_props_list > li{}
+.props_item{display:flex; align-items:center; gap:13px;}
+
+
+input.props_form_dom{display:inline-block;width:28px; height:28px; background:#fff;border:3px solid #fff; border-radius:100%;outline:1px solid rgb(160, 160, 160); border-radius:100%; appearance: none;}
+input.props_form_dom:checked{background-color:#0046ff}
+input.props_form_dom:checked + .props_form_label{}
+.props_form_label{font-size:30px; color:#565656; font-weight:500; display:inline-block; position:relative;top:2px; cursor: pointer;}
+.ec_form_note{text-align:center; font-size:22px; font-weight:400; line-height:1.4; letter-spacing:-1px; color:#a0a0a0; margin:50px -30px 0; }
+.ec_submit_wrap{margin-top:50px;}
+.btn_submit_box{display:flex; height:100px; justify-content: center; align-items: center; background:#002472; border-radius:1000px;}
+.btn_submit_box .text_node{color:#fff; font-weight:700; display:inline-block; font-size:52px; position:relative;top:5px;}
+
+@media (max-width:749px){
+  
+}
