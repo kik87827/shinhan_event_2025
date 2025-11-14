@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<meta name="format-detection" content="telephone=no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link href="./assets/css/reset.css" rel="stylesheet">
-	<link href="./assets/css/style.css" rel="stylesheet">
-	<script src="./assets/js/jquery-1.12.4.min.js"></script>
-	<script src="./assets/js/front.js"></script>
-	<title></title>
-</head>
-<body class="page_body">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/front.js"></script>
+    <title></title>
+  </head>
+  <body class="page_body">
     <div class="page_wrap">
-        <div class="event_contents_wrap">
-			
-		</div>
+      <div class="event_contents_wrap"></div>
     </div>
-	<script>
-        document.addEventListener("DOMContentLoaded", function() {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 퍼블확인용
+        let url = window.location.href.split("?")[1];
+        let url_2 = url !== undefined ? url.split("#")[0] : null;
 
-            // 퍼블확인용
-            let url = window.location.href.split('?')[1];
-            let url_2 = url !== undefined ? url.split('#')[0] : null;
+        // 퍼블확인용
+        if (url_2 === "message_01") {
+          designModal({
+            message:
+              "잘못된 참여 경로입니다.<br /><strong>신한 SOL라이프</strong> 앱에<br />로그인 후 참여해 주세요",
+            okcallback() {
+              console.log("okcallback");
+            },
+          });
+        }
+        if (url_2 === "message_02") {
+          designModal({
+            message:
+              "<strong>이미 경품 수령이 완료된<br />휴대폰번호 입니다.</strong><br /><span class='modal_sub_message'>1인 1회 당첨이 가능합니다.</span>",
+            okcallback() {
+              console.log("okcallback");
+            },
+          });
+        }
+        if (url_2 === "message_03") {
+          designModal({
+            message:
+              "<strong>SOL나라 산타가 준비한<br />선착순 선물이 모두 소진되었어요.</strong><br /><span class='modal_sub_message'><strong>보너스 경품 혜택</strong>을<br />기대해 주세요</span>",
+            okcallback() {
+              console.log("okcallback");
+            },
+          });
+        }
+        if (url_2 === "message_04") {
+          designModal({
+            message:
+              "<strong>당첨된 경품을 받으실 전화번호를<br />아직 입력하지 않으셨네요.</strong><br /><span class='modal_sub_message'>지금 바로 입력해주세요!</span>",
+            okcallback() {
+              console.log("okcallback");
+            },
+          });
+        }
+      });
 
-			// 퍼블확인용
-			if(url_2 === "already_modal"){
-				/* designModal({
-                    message : "이미 이벤트에<br>참여하였습니다.",
-                    okcallback(){
-                        console.log('okcallback');
-                    }
-                }); */
-			}
-        });
-
-		$(function(){
-			
-		})
-	</script>
-</body>
+      $(function () {});
+    </script>
+  </body>
 </html>
