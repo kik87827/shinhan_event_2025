@@ -22,7 +22,7 @@
               <div class="btn_ec_submit_container">
                 <img src="./assets/images/btn_take_santa.png" class="btn_ec_submit_img" alt="" />
                 <!-- 버튼 그림자때문에 히트영역 문제로 따로감 -->
-                <a href="#" class="btn_ec_submit"></a>
+                <a href="#" class="btn_ec_submit" id="btn_prize_call"></a>
               </div>
             </div>
             <div class="ec_slice"><img src="./assets/images/event_info_02.jpg" alt="" /></div>
@@ -75,10 +75,13 @@
         <div class="animation_img_container">
           <img src="./assets/images/ready_img.png" id="prize_img" alt="" />
         </div>
-        <div class="btn_ani_bottom_wrap">
-          <img src="./assets/images/btn_take_go.png" class="btn_ani_submit_img" alt="" />
-          <!-- 버튼 그림자때문에 히트영역 문제로 따로감 -->
-          <a href="#" class="btn_ani_submit"></a>
+        <div class="animation_bottom_wrap">
+          <img src="./assets/images/bg_prize_btn.jpg" class="bg_anibottom" alt="" />
+          <div class="btn_ani_bottom_wrap">
+            <img src="./assets/images/btn_take_go.png" class="btn_ani_submit_img" alt="" />
+            <!-- 버튼 그림자때문에 히트영역 문제로 따로감 -->
+            <a href="form.html" class="btn_ani_submit"></a>
+          </div>
         </div>
       </div>
       <a href="#" class="btn_popup_close"></a>
@@ -93,6 +96,20 @@
             console.log('close common callback');
             prizeImageReset();
           },
+        });
+
+        // event
+        document.querySelector('#btn_prize_call').addEventListener('click', (e) => {
+          e.preventDefault();
+          popup_prize.popupShow({
+            beforeOpenCallack() {
+              console.log('beforeOpenCallack');
+              prizeImageLoad('./assets/images/prize01.gif');
+            },
+            openCallback() {
+              console.log('openCallback');
+            },
+          });
         });
 
         // 퍼블확인용

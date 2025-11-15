@@ -118,9 +118,12 @@
       </div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {});
-
-      $(function () {});
+      $(function () {
+        $('.ec_tbar').on('click', function (e) {
+          e.preventDefault();
+          $(this).closest('li').toggleClass('active');
+        });
+      });
     </script>
   </body>
 </html>
