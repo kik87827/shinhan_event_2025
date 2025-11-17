@@ -187,6 +187,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .btn_popup_close:before{transform: rotate(45deg);}
 .btn_popup_close:after{transform: rotate(-45deg);}
 
+.btn_popup_close.skin2:before,
+.btn_popup_close.skin2:after{background:#000;}
+
 .btn_modal_close{position:absolute;top:40px;right:40px;width:60px;height:60px;}
 .btn_modal_close:before,
 .btn_modal_close:after{width:2px;height:60px;background:#4d4d4d;display:block;content:'';position:absolute;top:50%;left:50%;margin:-30px 0 0 -1px;}
