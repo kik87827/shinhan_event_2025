@@ -249,6 +249,11 @@
         let url_2 = url !== undefined ? url.split('#')[0] : null;
 
         // 퍼블확인용
+        if (url_2 === 'end') {
+          document.querySelector('.btn_ec_submit_img').setAttribute('src', './assets/images/btn_take_end.png');
+          document.querySelector('#btn_prize_call').closest('.btn_ec_submit_container').classList.add('disabled');
+          document.querySelector('#btn_prize_call').removeEventListener('click', () => {});
+        }
         if (url_2 === 'prize01') {
           popup_prize.popupShow({
             beforeOpenCallack() {
