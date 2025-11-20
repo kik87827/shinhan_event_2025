@@ -50,7 +50,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .ec_note_list .indent_bullet_list{margin-left:20px;}
 .indent_bullet_list > li{display:flex;gap:5px;margin-bottom:0;font-size:25px; font-weight:400; line-height:1.4; letter-spacing:-0.5px;}
 .indent_bullet_list > li:last-of-type{}
-.indent_bullet{display:inline-block; white-space:nowrap; line-height:1;font-size:25px; line-height:1.4;position:relative;top:0;}
+.indent_bullet{display:inline-block; white-space:nowrap; line-height:1;font-size:25px;position:relative;top:0;}
 .indent_para{flex:1;word-break: keep-all;font-size:18px; color:#222222;}
 @media (max-width:749px){
   /* .btn_ec_submit_container{top:-12px;}
@@ -83,9 +83,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   .ec_note_list > li:before{width:0.4vw;height:0.4vw;top:1.47vw;left:0.27vw;}
 
   .ec_note_list .indent_bullet_list{margin-left:2.67vw;}
-  .indent_bullet_list > li{gap:0.67vw;font-size:3.33vw;}
-  .indent_bullet{font-size:3.33vw;}
-  .indent_para{font-size:3.33vw;}
+  .indent_bullet_list > li{gap:0.67vw;font-size:2.4vw;}
+  .indent_bullet{font-size:2.4vw;line-height:1.4;}
+  .indent_para{font-size:2.4vw;}
 }
 
 /* popup */
