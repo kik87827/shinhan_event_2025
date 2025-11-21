@@ -39,35 +39,36 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .btn_ani_bottom_wrap img{vertical-align: top;position:relative;left:6px;}
 .btn_ani_submit{position:absolute;top:12px;left:50%;width:564px;height:136px;transform: translateX(-50%);}
 
-.ec_note_container{padding:60px 50px 60px;}
+.ec_note_container{padding:65px 50px 70px;}
 .ec_note_title_row{margin-bottom:30px;}
-.ec_note_title{font-size:24px; font-weight:700; color:#0046ff; letter-spacing: -1px;}
+.ec_note_title{font-size:29px; font-weight:700; color:#323232; letter-spacing: -1px;}
 .ec_note_contents{}
-.ec_note_list{font-size:18px; color:#222222; line-height:1.45;}
-.ec_note_list > li{position:relative;padding-left:18px; word-break: keep-all;}
-.ec_note_list > li:before{display:block;content:'';width:3px;height:3px;background:#0046ff; border-radius: 100%; position:absolute;top:11px;left:2px;}
+.ec_note_list{font-size:28px; color:#848484; line-height:1.45;}
+.ec_note_list > li{position:relative;padding-left:20px; word-break: keep-all;}
+.ec_note_list > li:before{display:block;content:'';width:5px;height:5px;background:#888888; border-radius: 100%; position:absolute;top:16px;left:2px;}
 .ec_note_list > li:last-of-type{}
 .ec_note_list .indent_bullet_list{margin-left:20px;}
-.indent_bullet_list > li{display:flex;gap:5px;margin-bottom:0;font-size:25px; font-weight:400; line-height:1.4; letter-spacing:-0.5px;}
+.indent_bullet_list > li{display:flex;gap:5px;margin-bottom:0;font-size:28px; font-weight:400; line-height:1.4; letter-spacing:-0.5px;}
 .indent_bullet_list > li:last-of-type{}
-.indent_bullet{display:inline-block; white-space:nowrap; line-height:1;font-size:25px;position:relative;top:0;}
-.indent_para{flex:1;word-break: keep-all;font-size:18px; color:#222222;}
+.indent_bullet{display:inline-block; white-space:nowrap; line-height:1.4;font-size:28px;position:relative;top:0;}
+.indent_para{flex:1;word-break: keep-all;font-size:28px; color:#888888;}
 @media (max-width:749px){
   /* .btn_ec_submit_container{top:-12px;}
   .btn_ec_submit_container > img{left:6px;}
   .btn_ec_submit{top:12px;width:564px;height:136px;}
   .btn_ani_bottom_wrap img{left:6px;}
   .btn_ani_submit{top:12px;width:564px;height:136px;}
-  .ec_note_container{padding:60px 50px 60px;}
+  .ec_note_container{padding:65px 50px 70px;}
   .ec_note_title_row{margin-bottom:30px;}
-  .ec_note_title{font-size:24px;}
-  .ec_note_list{font-size:18px;}
-  .ec_note_list > li{padding-left:18px;}
-  .ec_note_list > li:before{width:3px;height:3px;top:11px;left:2px;}
+  .ec_note_title{font-size:29px;}
+  .ec_note_list{font-size:28px;}
+  .ec_note_list > li{padding-left:20px;}
+  .ec_note_list > li:before{width:5px;height:5px;top:16px;left:2px;}
   .ec_note_list .indent_bullet_list{margin-left:20px;}
-  .indent_bullet_list > li{gap:5px;font-size:25px;}
-  .indent_bullet{font-size:20px;top:2px;}
-  .indent_para{font-size:18px;} */
+  .indent_bullet_list > li{gap:5px;font-size:28px;}
+  .indent_bullet{font-size:28px;}
+  .indent_para{font-size:28px;}
+  */
   .btn_ec_submit_container{top:-1.6vw;width:80.93vw; height:23.87vw;}
   .btn_ec_submit_container > img{left:0.8vw;}
   .btn_ec_submit{top:1.6vw;width:75.2vw;height:18.13vw;}
@@ -75,17 +76,16 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   .btn_ani_bottom_wrap img{left:0.8vw;}
   .btn_ani_submit{top:1.6vw;width:75.2vw;height:18.13vw;}
 
-  .ec_note_container{padding:8vw 6.67vw 8vw;}
+  .ec_note_container{padding:8.6667vw 6.6667vw 9.3333vw;}
   .ec_note_title_row{margin-bottom:4vw;}
-  .ec_note_title{font-size:3.2vw;}
-  .ec_note_list{font-size:2.4vw;}
-  .ec_note_list > li{padding-left:2.4vw;}
-  .ec_note_list > li:before{width:0.4vw;height:0.4vw;top:1.47vw;left:0.27vw;}
-
-  .ec_note_list .indent_bullet_list{margin-left:2.67vw;}
-  .indent_bullet_list > li{gap:0.67vw;font-size:2.4vw;}
-  .indent_bullet{font-size:2.4vw;line-height:1.4;}
-  .indent_para{font-size:2.4vw;}
+  .ec_note_title{font-size:3.8667vw;}
+  .ec_note_list{font-size:3.7333vw;}
+  .ec_note_list > li{padding-left:2.6667vw;}
+  .ec_note_list > li:before{width:0.6667vw;height:0.6667vw;top:2.1333vw;left:0.2667vw;}
+  .ec_note_list .indent_bullet_list{margin-left:2.6667vw;}
+  .indent_bullet_list > li{gap:0.6667vw;font-size:3.7333vw;}
+  .indent_bullet{font-size:3.7333vw;}
+  .indent_para{font-size:3.7333vw;}
 }
 
 /* popup */
